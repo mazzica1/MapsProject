@@ -7,8 +7,6 @@ target 'MapsProject' do
 
   # Pods for MapsProject
 pod 'GoogleMaps', '= 2.1.0'
-# pod 'Alamofire', '~> 4.4'
-#pod 'SwiftyJSON'
  pod 'GooglePlaces'
  pod 'GooglePlacePicker'
 
