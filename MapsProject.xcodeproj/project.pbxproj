@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1579910FBFEF21D98BCCA50B /* Pods_MapsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B4BE6853E862E0F3C6DA8 /* Pods_MapsProject.framework */; };
 		FAB54A601F154B2E0065DD38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB54A5F1F154B2E0065DD38 /* AppDelegate.swift */; };
 		FAB54A621F154B2E0065DD38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB54A611F154B2E0065DD38 /* ViewController.swift */; };
 		FAB54A651F154B2E0065DD38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB54A631F154B2E0065DD38 /* Main.storyboard */; };
 		FAB54A671F154B2E0065DD38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB54A661F154B2E0065DD38 /* Assets.xcassets */; };
 		FAB54A6A1F154B2E0065DD38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB54A681F154B2E0065DD38 /* LaunchScreen.storyboard */; };
+		FAB54A721F154DEC0065DD38 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB54A711F154DEC0065DD38 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070B4BE6853E862E0F3C6DA8 /* Pods_MapsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF1A7DB753665D17D9D6171 /* Pods-MapsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapsProject/Pods-MapsProject.release.xcconfig"; sourceTree = "<group>"; };
+		F2A1B5FCF1DF58EFB4F27E56 /* Pods-MapsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapsProject/Pods-MapsProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB54A5C1F154B2E0065DD38 /* MapsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB54A5F1F154B2E0065DD38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB54A611F154B2E0065DD38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		FAB54A661F154B2E0065DD38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB54A691F154B2E0065DD38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB54A6B1F154B2E0065DD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB54A711F154DEC0065DD38 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1579910FBFEF21D98BCCA50B /* Pods_MapsProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		740470773448292FC9826327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070B4BE6853E862E0F3C6DA8 /* Pods_MapsProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84EB057A5669537906878E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1B5FCF1DF58EFB4F27E56 /* Pods-MapsProject.debug.xcconfig */,
+				1FF1A7DB753665D17D9D6171 /* Pods-MapsProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAB54A531F154B2E0065DD38 = {
 			isa = PBXGroup;
 			children = (
 				FAB54A5E1F154B2E0065DD38 /* MapsProject */,
 				FAB54A5D1F154B2E0065DD38 /* Products */,
+				84EB057A5669537906878E33 /* Pods */,
+				740470773448292FC9826327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				FAB54A661F154B2E0065DD38 /* Assets.xcassets */,
 				FAB54A681F154B2E0065DD38 /* LaunchScreen.storyboard */,
 				FAB54A6B1F154B2E0065DD38 /* Info.plist */,
+				FAB54A711F154DEC0065DD38 /* ConnectionManager.swift */,
 			);
 			path = MapsProject;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB54A6E1F154B2E0065DD38 /* Build configuration list for PBXNativeTarget "MapsProject" */;
 			buildPhases = (
+				88FB3D39E2C60AFC8600EA52 /* [CP] Check Pods Manifest.lock */,
 				FAB54A581F154B2E0065DD38 /* Sources */,
 				FAB54A591F154B2E0065DD38 /* Frameworks */,
 				FAB54A5A1F154B2E0065DD38 /* Resources */,
+				9D651E056CA54AA4783E4DB6 /* [CP] Embed Pods Frameworks */,
+				1F6925DD56A9F6F590669158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F6925DD56A9F6F590669158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapsProject/Pods-MapsProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88FB3D39E2C60AFC8600EA52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D651E056CA54AA4783E4DB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapsProject/Pods-MapsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAB54A581F154B2E0065DD38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAB54A621F154B2E0065DD38 /* ViewController.swift in Sources */,
+				FAB54A721F154DEC0065DD38 /* ConnectionManager.swift in Sources */,
 				FAB54A601F154B2E0065DD38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +337,7 @@
 		};
 		FAB54A6F1F154B2E0065DD38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A1B5FCF1DF58EFB4F27E56 /* Pods-MapsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MapsProject/Info.plist;
@@ -270,6 +350,7 @@
 		};
 		FAB54A701F154B2E0065DD38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF1A7DB753665D17D9D6171 /* Pods-MapsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MapsProject/Info.plist;
@@ -299,6 +380,7 @@
 				FAB54A701F154B2E0065DD38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
